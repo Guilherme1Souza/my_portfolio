@@ -1,0 +1,42 @@
+body.dark .nav-a-list {
+  color: var(--black);
+}
+
+body.dark header {
+  background-color: #e4e2e2;
+}
+
+body.dark .hero {
+  background: rgb(228, 226, 226);
+  background: linear-gradient(
+    0deg,
+    rgba(228, 226, 226, 1) 97%,
+    rgba(156, 156, 156, 1) 99%
+  );
+}
+
+body.dark h1 {
+  color: var(--black);
+}
+
+.hero_sociais {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 300px;
+}
+
+body.dark #img_social {
+  color: var(--black);
+}
+
+body.dark #img_social:hover {
+  color: var(--color-blue);
+}
+
+body.dark .line {
+  width: 2px; 
+  height: 90px; 
+  background-color: var(--black);
+  margin: 15px 0 0 35px;
+}
