@@ -1,0 +1,23 @@
+.about_section {
+    display: flex;
+}
+
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    width: 588px;
+    height: 233px;
+    color: var(--white);
+    margin: 190px 0px 363px 140px;
+}
+
+.img_main {
+    margin: 100px 200px 300px 120px;
+    background-size: cover;
+}
+
+.foto_main1 {
+    width: 350px;
+    height: 323px;
+}
