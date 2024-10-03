@@ -35,9 +35,16 @@ body.dark #img_social:hover {
   color: var(--color-blue);
 }
 
-body.dark .line {
-  width: 2px;
-  height: 90px;
-  background-color: var(--black);
-  margin: 15px 0 0 35px;
+
+body.dark a {
+  color: var(--black);
+}
+
+body.dark .btn-cv {
+  color: var(--color-blue);
+}
+
+body.dark .btn-cv:hover  {
+  background-color: #0056b3;
+  color: var(--white);
 }
