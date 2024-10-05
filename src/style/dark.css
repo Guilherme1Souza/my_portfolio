@@ -53,4 +53,14 @@ body.dark .btn-cv:hover  {
   body.dark .nav-list { 
     background-color: var(--white);
   }
+
+  body.dark .hamburger {
+    border-top: 3px solid var(--black); /* Cor das barras no modo escuro */
+  }
+  
+  body.dark .hamburger::before,
+  body.dark .hamburger::after {
+    background-color: var(--black); /* Cor das barras no modo escuro */
+  }
+  
 }
