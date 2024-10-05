@@ -48,3 +48,9 @@ body.dark .btn-cv:hover  {
   background-color: #0056b3;
   color: var(--white);
 }
+
+@media (max-width: 768px) {
+  body.dark .nav-list { 
+    background-color: var(--white);
+  }
+}
