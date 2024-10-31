@@ -51,7 +51,11 @@ body.dark .btn-cv:hover  {
 
 @media (max-width: 768px) {
   body.dark .nav-list { 
-    background-color: var(--white);
+    background-color: var(--black);
+  }
+
+  body.dark  .nav-list a {
+  color: var(--white);
   }
 
   body.dark .hamburger {

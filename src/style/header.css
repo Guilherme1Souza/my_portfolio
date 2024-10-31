@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-size: 62.5%;
+}
+
 body {
   -webkit-transition: .4s;
   transition: .4s;
@@ -14,12 +18,12 @@ body {
 }
 
 .header {
-  padding-inline: 16px;
+  padding-inline: 1.6rem;
 }
 
 .nav {
-  max-width: 1280px;
-  height: 70px;
+  max-width: 128.0rem;
+  height: 7.0rem;
   margin-inline: auto;
 
   display: flex;
@@ -31,7 +35,7 @@ body {
   display: flex;
   text-align: center;
   align-items: center;
-  gap: 68px;
+  gap: 6.8rem;
   list-style: none;
 
 }
@@ -39,9 +43,9 @@ body {
 
 .nav-list a {
   display: flex;
-  font-size: 15px;
-  color: var( --color--text-a);
-  padding-block: 16px;
+  font-size: 1.5rem;
+  color: var(--color--text-a);
+  padding-block: 1.6rem;
   text-decoration: none;
   text-transform: capitalize;
   text-transform: uppercase;
@@ -53,23 +57,23 @@ body {
 .nav-list a::before {
   content: '';
   position: absolute;
-  bottom: 5px;
+  bottom: .5rem;
   left: 0;
-  width: 0; /* Inicialmente 0 para permitir a transição */
+  width: 0;
   height: 3px;
   background-color: var(--color-blue);
-  transition: width .5s; /* Transição apenas na largura */
+  transition: width .5s;
 }
 
 .nav-list a:hover::before {
-  width: 100%; /* Expande a largura ao passar o cursor */
+  width: 100%;
 }
 
 .hamburger {
   display: none;
   border: none;
   background: none;
-  border-top: 3px solid var(--white); /* Cor da barra no modo claro */
+  border-top: 3px solid var(--white);
   cursor: pointer;
 }
 
@@ -77,9 +81,9 @@ body {
 .hamburger::after {
   content: " ";
   display: block;
-  width: 30px;
+  width: 3.0rem;
   height: 3px;
-  background-color: var(--white); /* Cor da barra no modo claro */
+  background-color: var(--white);
   margin-top: 5px;
   position: relative;
   transition: 0.3s;
@@ -92,32 +96,31 @@ body {
 .hero {
   display: flex;
   align-items: center;
-  gap: 80px;
-  height: 640px;
+  gap: 8.0rem;
+  height: 100%;
   background: linear-gradient(180deg, rgba(101, 99, 99, 1) 0%, rgba(21, 16, 16, 1) 2%);
 }
 
 .hero_text {
   display: flex;
   flex-direction: column;
-  margin: 0 0 100px 100px;
+  margin: 0 0 10.0rem 10.0rem;
 }
 
 h2 {
   font-family: "Shrikhand", serif;
-  font-size: 40px;
-  width: 588px;
-  height: 80px;
+  font-size: 4.0rem;
+  height: 8.0rem;
   color: var(--color-blue);
-  margin-left: 40px;
+  margin-left: 5.9rem;
 }
 
 h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 70px;
+  font-size: 7.0rem;
   color: var(--white);
-  margin-left: 35px;
+  margin-left: 5.6rem;
 }
 
 .hero_text_info {
@@ -129,18 +132,20 @@ h1 {
 
 a {
   font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
   text-decoration: none;
   color: var(--white);
 }
 
 .hero_img {
-  margin: 290px 500px 300px 0;
+  margin: 29.0rem 50.0rem 30.0rem 0;
   background-size: cover;
 }
 
 .perfil {
-  width: 350px;
-  height: 323px;
+  width: 35.0rem;
+  height: 32.3rem;
+  border-radius: 50%;
 }
 
 .hero-sociais-img {
@@ -151,9 +156,9 @@ a {
 
 #img_social {
   color: var(--white);
-  width: 50px;
-  height: 50px;
-  margin-left: 20px;
+  width: 5.0rem;
+  height: 5.0rem;
+  margin-left: 2.0rem;
   transition: color 0.2s ease-in-out;
 }
 
@@ -162,27 +167,27 @@ a {
 }
 
 .hero_text_info #img_social {
-  height: 30px;
-  margin-left: 38px;
+  height: 3.0rem;
+  margin-left: 3.8rem;
 }
 
 .fa-whatsapp:before,
 .fa-envelope:before {
-  margin-left: 25px;
+  margin-left: 2.5rem;
 }
 
 .btn-cv {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0 0 100px;
-  padding: 10px 20px;
-  width: 200px;
+  margin: 2.0rem 0 0 6.5rem;
+  padding: 1.0rem 2.0rem;
+  width: 20.0rem;
   background-color: transparent;
   border: 1px solid var(--color-blue);
   color: var(--color-blue);
   border-radius: 5px;
-  gap: 20px;
+  gap: 2.0rem;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -208,9 +213,9 @@ a {
     top: 70px;
     right: 50px;
     width: 50vw;
-    height: 85vh;
+    height: 50.5rem;
     border-radius: 15px;
-    background: #626262;
+    background: #ffffff;
     clip-path: circle(20px at 90% -15%);
     transition: 1s ease-out;
 
@@ -223,23 +228,10 @@ a {
   }
 
   .nav-list a {
-    font-size: 24px;
+    font-size: 1.6rem;
+    color: var(--black);
     opacity: 0;
   }
-
-  .nav-list li:nth-child(1) a {
-    transition: 0.5s 0.2s;
-  }
-
-  .nav-list li:nth-child(2) a {
-    transition: 0.5s 0.4s;
-  }
-
-  .nav-list li:nth-child(3) a {
-    transition: 0.5s 0.6s;
-  }
-
-  /* Estilos ativos */
 
   .nav.active .nav-list {
     clip-path: circle(1500px at 90% -15%);
@@ -264,47 +256,66 @@ a {
     transform: rotate(-135deg);
     top: -7px;
   }
-  
+
   .hero {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
-    align-items: center;
     text-align: center;
     gap: 5px;
+    max-width: 480px;
+  }
 
+  .hero_img {
+    width: 150px;
+    height: 150px;
+  }
 
-    .hero_img {
-      width: 150px;
-      height: 150px;
-    }
+  .perfil {
+    width: 200px;
+    height: 200px;
+    margin: 150px auto 0 230px;
+  }
 
-    .perfil {
-      width: 200px;
-      height: 200px;
-      margin: 150px auto 0 220px;
-    }
+  h1 {
+    font-size: 35px;
+  }
 
-    h1 {
-      font-size: 30px;
-    }
+  h2 {
+    font-size: 25px;
 
-    h2 {
-      font-size: 18px;
-      width: 290px;
-    }
+  }
 
-    .hero_text {
-      margin-right: 150px;
-    }
+  #img_social {
+    margin-top: 8px;
+  }
 
-    .hero-sociais-img {
-      display: none;
-    }
+  a {
+    display: flex;
+    margin-left: 0;
+  }
+  
+  .hero_text {
+    width: 480px;
+    margin-right: 150px;
+  }
 
-    .btn-cv {
-      margin: 20px auto;
-      width: 180px;
-    }
+  .hero_text_info {
+    display: flex;
+    justify-content: row;
+    margin-top: 10px;
+    margin-left: 70px;
+  }
+  
+  .hero-sociais-img {
+   display: none;
+  }
+
+  .btn-cv {
+    margin-left: 160px;
+  }
+
+  .hero_text_info_cv {
+    width: 100px;
   }
 }
